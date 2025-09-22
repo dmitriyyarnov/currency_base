@@ -61,7 +61,8 @@ python flow/usd_flow.py
 uvicorn api.api:app --reload
 
 # Эндпоинт:  http://127.0.0.1:8000/rates?limit=5&sort=desc
-# Пример ответа: [
+# Пример ответа: 
+[
   {"date": "2025-09-22", "rate": 93.45},
   {"date": "2025-09-21", "rate": 93.10}
 ]
