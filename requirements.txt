@@ -1,6 +1,3 @@
 beautifulsoup4
 requests
-fastapi
-uvicorn
 prefect
-matplotlib
