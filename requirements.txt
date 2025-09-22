@@ -1,6 +1,6 @@
+beautifulsoup4
 requests
-pandas
-matplotlib
-prefect
-lxml
+fastapi
 uvicorn
+prefect
+matplotlib
