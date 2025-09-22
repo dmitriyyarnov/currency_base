@@ -25,12 +25,12 @@
 
 ---
 
-### 2. Установка зависимостей
+### 1. Установка зависимостей
 Открой **Terminal** в PyCharm и выполни:
 
 pip install -r requirements.txt
 
-### 3. Сбор первого курса USD
+### 2. Сбор первого курса USD
 
 В панели проекта открой `scraper/scraper.py`.
 
@@ -42,7 +42,7 @@ pip install -r requirements.txt
 
 python scraper/scraper.py
 
-### 4. Автоматический запуск через Prefect
+### 3. Автоматический запуск через Prefect
 
 В панели проекта открой `flow/usd_flow.py`.
 
@@ -52,7 +52,7 @@ python scraper/scraper.py
 
 python flow/usd_flow.py
 
-### 5. Запуск API
+### 4. Запуск API
 
 В панели проекта открой `api/api.py`.
 
@@ -68,7 +68,7 @@ uvicorn api.api:app --reload
 ]
 
 
-### 6. Построение графика
+### 5. Построение графика
 
 В панели проекта открой `analysis/plot.py`.
 
