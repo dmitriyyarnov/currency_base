@@ -32,7 +32,7 @@ Flow будет запускаться каждый день в указанно
 
 python analysis/plot.py график динамики курса USD откроется в отдельном окне matplotlib.
 
-### USD Rates API
+### rates API
 
 API на FastAPI для получения исторических курсов USD из JSON-файлов (`data/`).  
 Запуск: `uvicorn app.main:app --reload` (доступно на `http://127.0.0.1:8000`).  
