@@ -38,6 +38,7 @@ API на FastAPI для получения исторических курсов
 Эндпоинт: `GET /rates`  
 Параметры: `limit` (1–100, по умолчанию 10), `sort` (`asc`/`desc`, по умолчанию `desc`)  
 Пример: 'http://127.0.0.1:8000/rates', 'GET http://127.0.0.1:8000/rates?limit=5&sort=desc'
+
 Swagger UI: 'http://127.0.0.1:8000/docs'
 
 
