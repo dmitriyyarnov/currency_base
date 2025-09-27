@@ -15,28 +15,26 @@
    - Параметры: limit (1–100, по умолчанию 10), sort (asc/desc, по умолчанию desc)
 
 ### Установка зависимостей
-pip install -r requirements.txt
+    pip install -r requirements.txt
 
 ### Сбор первого курса USD
-python scraper/scraper.py
+    python scraper/scraper.py
 
 ### Автоматический запуск
-Flow будет запускаться каждый день в указанное время. В скрипте время задано так: schedule.every().day.at("00:00").do(run_flow)
-Запуск скрипта: python usd_scraper_flow.py
-Скрипт должен работать постоянно, чтобы расписание выполнялось.
+    Flow будет запускаться каждый день в указанное время. В скрипте время задано так: schedule.every().day.at("00:00").do(run_flow)
+    Запуск скрипта: python usd_scraper_flow.py
+    Скрипт должен работать постоянно, чтобы расписание выполнялось.
 
 ### Построение графика
-python analysis/plot.py график динамики курса USD откроется в отдельном окне matplotlib.
+    python analysis/plot.py график динамики курса USD откроется в отдельном окне matplotlib.
 
 ### Rates API
-API на FastAPI для получения исторических курсов USD из JSON-файлов (`data/`).  
-Запуск: `uvicorn app.main:app --reload` (доступно на 'http://127.0.0.1:8000').  
-
-Эндпоинт: `GET /rates`  
-Параметры: `limit` (1–100, по умолчанию 10), `sort` (`asc`/`desc`, по умолчанию `desc`)  
-Пример: 'http://127.0.0.1:8000/rates', 'GET http://127.0.0.1:8000/rates?limit=5&sort=desc'
-
-Swagger UI: 'http://127.0.0.1:8000/docs'
+    API на FastAPI для получения исторических курсов USD из JSON-файлов (`data/`).  
+    Запуск: `uvicorn app.main:app --reload` (доступно на 'http://127.0.0.1:8000').  
+    Эндпоинт: `GET /rates`  
+    Параметры: `limit` (1–100, по умолчанию 10), `sort` (`asc`/`desc`, по умолчанию `desc`)  
+    Пример: 'http://127.0.0.1:8000/rates', 'GET http://127.0.0.1:8000/rates?limit=5&sort=desc'
+    Swagger UI: 'http://127.0.0.1:8000/docs'
 
 
 
