@@ -16,7 +16,7 @@ def run_flow():
     usd_scraper_flow()
 
 # Запуск каждый день в час:мин
-schedule.every().day.at("00:35").do(run_flow)
+schedule.every().day.at("00:50").do(run_flow)
 
 print("Scheduler started...")
 

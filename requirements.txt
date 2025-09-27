@@ -4,3 +4,4 @@ prefect
 datetime
 schedule
 matplotlib
+fastapi
