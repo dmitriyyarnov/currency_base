@@ -31,7 +31,9 @@ Flow будет запускаться каждый день в указанно
 
 ### Rates API
 API на FastAPI для получения исторических курсов USD из JSON-файлов (`data/`).  
-Запуск: `uvicorn app.main:app --reload` (доступно на 'http://127.0.0.1:8000').  
+     
+    uvicorn app.main:app --reload
+Доступно на 'http://127.0.0.1:8000'
 Эндпоинт: `GET /rates`  
 Параметры: `limit` (1–100, по умолчанию 10), `sort` (`asc`/`desc`, по умолчанию `desc`)  
 Пример: 'http://127.0.0.1:8000/rates', 'GET http://127.0.0.1:8000/rates?limit=5&sort=desc'
